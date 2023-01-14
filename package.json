@@ -3,16 +3,26 @@
   "version": "0.0.1",
   "description": "Utility functions for developing AWS Lambda functions",
   "main": "n/a",
-  "files": ["dist/*"],
+  "files": [
+    "dist/*"
+  ],
   "scripts": {
     "build": "rimraf dist && tsc",
-    "test": "vitest run"
+    "test": "vitest run",
+    "lint": "eslint src/**/*.ts",
+    "lint:fix": "eslint --fix src/**/*.ts"
   },
-  "keywords": ["aws", "lambda"],
+  "keywords": [
+    "aws",
+    "lambda"
+  ],
   "author": "Janne Vanhanen <janne.vanhanen@outlook.com",
   "license": "ISC",
   "devDependencies": {
     "@types/aws-lambda": "^8.10.109",
+    "@typescript-eslint/eslint-plugin": "^5.48.1",
+    "@typescript-eslint/parser": "^5.48.1",
+    "eslint": "^8.31.0",
     "rimraf": "^4.0.4",
     "typescript": "^4.9.4",
     "vitest": "^0.27.1"

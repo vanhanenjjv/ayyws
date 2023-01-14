@@ -8,7 +8,9 @@ import {
 
 /* Created with retry and pass functions. */
 type Result =
+  /* Record should be retried. */
   | { retry: true }
+  /* Record should not be retried. */
   | { retry: false }
 
 /* Creates a result value that signals the SQSHandler 

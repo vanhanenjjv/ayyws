@@ -39,7 +39,8 @@ type HandlerFunction = (
   context: Context,
   /* Passed directly by the SQSHandler wrapper. */
   callback: Callback<void | SQSBatchResponse>
-  /* Used by the SQSHandler wrapper to keep track of the records to be retried. */
+  /* The return value is used by the SQSHandler 
+     wrapper to keep track of the records to be retried. */
 ) => Promise<Result> | Result
 
 /* Creates a SQSHandler wrapper function which applies the given

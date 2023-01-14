@@ -1,4 +1,4 @@
-type UnknownRecord = Record<string | number | symbol, unknown>
+import { UnknownRecord } from '../types'
 
 type TaggedRecord<Tag extends string, Record = UnknownRecord> = Record & { tag: Tag }
 

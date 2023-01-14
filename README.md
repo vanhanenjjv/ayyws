@@ -2,7 +2,7 @@
 
 My utility functions for developing AWS Lambda functions.
 
-## sqs.ts
+## [sqs.ts](./src/sqs.ts)
 
 ```ts
 import {

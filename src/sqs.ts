@@ -48,7 +48,7 @@ const mapToBatchResponse = (outputs: ProcessRecordOutput[]): SQSBatchResponse =>
   }))
 })
 
-export const handler =
+export const makeHandler =
   (fn: HandlerFunction): SQSHandler =>
     (event, context, callback) =>
       Promise.all(processEvent(fn, event, context, callback))

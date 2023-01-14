@@ -59,7 +59,7 @@ type HandlerFunction = (
   callback: Callback<APIGatewayProxyResultV2<never>>
 ) => Promise<APIGatewayProxyResultV2> | APIGatewayProxyResultV2
 
-export const handler =
+export const makeHandler =
   (fn: HandlerFunction): APIGatewayProxyHandlerV2 =>
     (event, context, callback) =>
       Promise.resolve(fn(event, context, callback))

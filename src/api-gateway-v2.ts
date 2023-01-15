@@ -45,9 +45,9 @@ const response = (defaults: ResponseDefaults): ResponseFunction => options => {
   }
 }
 
-export const badRequest = response({ body: 'Bad request', statusCode: 400 })
-export const internalServerError = response({ body: 'Internal server error', statusCode: 500 })
-export const notFound = response({ body: 'Not found', statusCode: 404 })
+export const badRequest = response({ body: 'Bad Request', statusCode: 400 })
+export const internalServerError = response({ body: 'Internal Server Error', statusCode: 500 })
+export const notFound = response({ body: 'Not Found', statusCode: 404 })
 export const ok = response({ body: 'Ok', statusCode: 200 })
 export const unauthorized = response({ body: 'Unauthorized', statusCode: 401 })
 export const forbidden = response({ body: 'Forbidden', statusCode: 403 })

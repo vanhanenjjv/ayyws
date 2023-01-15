@@ -19,13 +19,13 @@ type ResponseFunction = (
 ) => APIGatewayProxyResultV2
 
 /* Response functions. They create response objects with default values. */
-declare const badRequest: ResponseFunction
-declare const internalServerError: ResponseFunction
-declare const notFound: ResponseFunction
-declare const ok: ResponseFunction
-declare const unauthorized: ResponseFunction
-declare const forbidden: ResponseFunction
-declare const conflict: ResponseFunction
+declare const badRequest: ResponseFunction          // 400, "Bad Request"
+declare const internalServerError: ResponseFunction // 500, "Internal Server Error"
+declare const notFound: ResponseFunction            // 404, "Not Found"
+declare const ok: ResponseFunction                  // 200, "Ok"
+declare const unauthorized: ResponseFunction        // 401, "Unauthorized"
+declare const forbidden: ResponseFunction           // 403, "Forbidden"
+declare const conflict: ResponseFunction            // 409, "Conflict"
 
 type HandlerFunction = APIGatewayProxyHandlerV2
 

@@ -5,8 +5,8 @@ import * as TaskEither from 'fp-ts/TaskEither'
 import * as t from 'io-ts'
 import { match } from 'ts-pattern'
 
-import * as sqs from '../../src/sqs'
-import { tag } from '../../src/utils'
+import * as sqs from 'ayyws/sqs'
+import { tag } from 'ayyws/utils'
 
 const NotificationCodec = t.strict({
   id: t.string,

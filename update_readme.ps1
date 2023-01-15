@@ -8,7 +8,8 @@ $(Get-ChildItem readme/* -Include *.ts | ForEach-Object {
 ``````ts
 $((Get-Content -Raw $_).Trim())
 ``````
-"@ `
+
+"@`
 | Write-Output
 })
 "@

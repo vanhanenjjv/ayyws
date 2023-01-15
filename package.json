@@ -1,8 +1,13 @@
 {
   "name": "ayyws",
+  "type": "module",
   "version": "0.0.1",
   "description": "Utility functions for developing AWS Lambda functions",
   "main": "n/a",
+  "workspaces": [
+    "src",
+    "examples"
+  ],
   "files": [
     "dist/*"
   ],

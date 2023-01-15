@@ -6,7 +6,7 @@ import {
   Callback
 } from 'aws-lambda'
 
-/* Created with retry and pass functions. */
+/* Is not exported and should be created with retry and pass functions. */
 type Result =
   /* Record should be retried. */
   | { retry: true }

@@ -1,0 +1,10 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "paths": {
+      "ayyws/*": ["../dist/*"]
+    }
+  },
+  "include": ["examples/**/*.ts"],
+  "exclude": ["examples/**/*.test.ts"]
+}

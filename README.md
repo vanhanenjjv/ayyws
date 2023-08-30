@@ -1,4 +1,4 @@
-# ayyws (DISCLAIMER: Work in Progress)
+# ayyws (DISCLAIMER: Indefinitely Work in Progress)
 
 My utility functions for developing AWS Lambda functions.
 
